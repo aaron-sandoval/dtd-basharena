@@ -1,0 +1,7 @@
+transcripts: experiments/_logs/debug_tracked
+scans: experiments/data/scout_scans
+generate_config:
+  timeout: 600
+  max_connections: 60
+  reasoning_effort: high
+  cache: true

@@ -1,0 +1,1434 @@
+{
+ "description": "Data files for the tu-bb2 public release. Paths are relative to the repo root.",
+ "groups": {
+  "base": {
+   "title": "Always downloaded: the 566-task BA1.0 split and the eval launcher's import-time task set",
+   "n_files": 3,
+   "bytes": 256473031
+  },
+  "fig2": {
+   "title": "Figure 2: safety bars, monitor scope and attack-plan sharing",
+   "n_files": 35,
+   "bytes": 19225592401
+  },
+  "fig3": {
+   "title": "Figure 3: safety vs usefulness, DTD vs DTR vs trusted monitoring",
+   "n_files": 29,
+   "bytes": 15823600711
+  },
+  "fig4": {
+   "title": "Figure 4: DTD safety by attack plan",
+   "n_files": 6,
+   "bytes": 5204476161
+  },
+  "fig5": {
+   "title": "Figure 5: decompositions and usefulness with a random trigger",
+   "n_files": 6,
+   "bytes": 813318527
+  },
+  "fig6": {
+   "title": "Figure 6: safety under shorter step / working-time limits",
+   "n_files": 64,
+   "bytes": 35639128533
+  },
+  "fig7": {
+   "title": "Figure 7: status of DTD samples over 60 steps",
+   "n_files": 2,
+   "bytes": 1495038768
+  },
+  "fig8": {
+   "title": "Figure 8: safety on overlapping vs non-overlapping test subsets",
+   "n_files": 41,
+   "bytes": 24020767498
+  },
+  "fig9": {
+   "title": "Figure 9: safety by side-task-test remediation policy",
+   "n_files": 58,
+   "bytes": 40589954299
+  },
+  "fig10": {
+   "title": "Figure 10: attack samples by replay deviation score",
+   "n_files": 27,
+   "bytes": 17922357293
+  },
+  "fig11": {
+   "title": "Figure 11: text-file trigger protocol vs DTD vs trusted monitoring",
+   "n_files": 29,
+   "bytes": 16010934126
+  },
+  "fig12": {
+   "title": "Figure 12: give up after first decomposition vs always attack",
+   "n_files": 3,
+   "bytes": 2650679340
+  },
+  "fig13": {
+   "title": "Figure 13: safety vs up-front attack selection rate",
+   "n_files": 9,
+   "bytes": 3986519034
+  },
+  "fig14": {
+   "title": "Figure 14: DTD attacker behaviour by child task",
+   "n_files": 10,
+   "bytes": 11455302570
+  },
+  "fig15": {
+   "title": "Figure 15: trusted monitoring safety by attack plan",
+   "n_files": 17,
+   "bytes": 7118027177
+  },
+  "tab1": {
+   "title": "Table 1: four DTD variants",
+   "n_files": 15,
+   "bytes": 6571504125
+  },
+  "tab2": {
+   "title": "Table 2: samples affected by eval limits",
+   "n_files": 19,
+   "bytes": 10428661978
+  },
+  "tab3": {
+   "title": "Table 3: samples affected by the side-task-test fix",
+   "n_files": 13,
+   "bytes": 13448803892
+  },
+  "appendix-malware": {
+   "title": "Appendix: defunct malware side task (Scout side-task attribution)",
+   "n_files": 23,
+   "bytes": 5096748802
+  },
+  "remediation": {
+   "title": "Side-task-test remediation inputs not read by any figure (originals, replays, reruns)",
+   "n_files": 0,
+   "bytes": 0
+  }
+ },
+ "files": {
+  "experiments/_logs/milestone/2026-04-28T00-39-32_40_attack_RANDOM637.eval": {
+   "md5": "59fd000e3d38da97e54f8862f2ba92dd",
+   "size": 68570670,
+   "used_by": [
+    "base"
+   ]
+  },
+  "experiments/_logs/milestone/2026-04-30T06-30-31_120_uh_sus_TEST-RANDOM637.eval": {
+   "md5": "2efef1131303006ea51d38f34bec655d",
+   "size": 165301385,
+   "used_by": [
+    "base"
+   ]
+  },
+  "experiments/_logs/milestone/2026-06-09T01-00-53_79_dtr-rhe-p97_RANDOM637-TRAIN637.eval": {
+   "md5": "c96244d56cb801f8eb68cf6211783102",
+   "size": 22600976,
+   "used_by": [
+    "base"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T02-57-13_453_tpolicy-gpt54nano_BA10-UNION.eval": {
+   "md5": "e5b6c0d35acdc955d006c8d4e74979d4",
+   "size": 27239252,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig5",
+    "fig11",
+    "tab1"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T02-59-38_452_uh_sus_BA10-UNION.eval": {
+   "md5": "67c63962d0c9b99bd75f4c2aa04d7275",
+   "size": 171210317,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig5",
+    "fig6",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig11",
+    "fig13",
+    "fig15",
+    "tab1",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION.eval": {
+   "md5": "9331211250c93e1ea32d67505e9b959a",
+   "size": 262487096,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit.eval": {
+   "md5": "fc517cbf32d3abeb26f6d528b36991e6",
+   "size": 227431962,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig6",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig11",
+    "fig13",
+    "fig15",
+    "tab2",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit_actions10.eval": {
+   "md5": "9740fc04fa264047902d17088b20a923",
+   "size": 221929136,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit_actions15.eval": {
+   "md5": "47b709267ff8e419e79c9e007986869e",
+   "size": 224165247,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit_actions20.eval": {
+   "md5": "3413c85d310f0865738ff984b1b118a5",
+   "size": 225816604,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit_actions25.eval": {
+   "md5": "03638d9b4c5519cf64ea2dc1df94a76a",
+   "size": 226845183,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit_actions30.eval": {
+   "md5": "ead40987e617edee6ce20da9a299b368",
+   "size": 227144573,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit_actions35.eval": {
+   "md5": "71c9335d6aa01db0a45ea073fce3834a",
+   "size": 227298618,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit_actions40.eval": {
+   "md5": "fc899351eed3dbcc3b85ed8fc3cb1e6b",
+   "size": 227367373,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit_actions45.eval": {
+   "md5": "397be9d5eb7b49ee7c3eed268dd4116f",
+   "size": 227387729,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit_actions5.eval": {
+   "md5": "f141bcaaf416bd64bad4c51178171a8a",
+   "size": 220058180,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit_actions50.eval": {
+   "md5": "be1b64ca5ade1ded83063d740e6522d8",
+   "size": 227407695,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit_actions55.eval": {
+   "md5": "0f0470baa4f354fe09af3153c2aaaf5b",
+   "size": 227431962,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-17T06-55-37_176_tpolicy-gpt54nano-gapfill_BA10-UNION.eval": {
+   "md5": "e09d2bc602d58aa16f830600be2f844d",
+   "size": 10170671,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig5",
+    "fig11",
+    "tab1"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T04-01-41_629_dtrf-v11.1-defer1p0-nocache_sus_BA10-UNION.eval": {
+   "md5": "9d6ab6fa3e6da8b34c89741db43ed8f9",
+   "size": 288273198,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig10",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T04-24-03_629_dtrf-v11.1-defer3p0-nocache_sus_BA10-UNION.eval": {
+   "md5": "3c5f49e85c246fdff05d65be546b621f",
+   "size": 234404621,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig10",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T05-49-10_629_dtrf-v11.1-defer0p2-nocache_sus_BA10-UNION.eval": {
+   "md5": "5812b1cad43b4bc7b6fd174a8d0949cf",
+   "size": 786630724,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig10",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T08-30-06_629_attack_dtr-v11.1-defer1p0-nocache_sus_BA10-UNION.eval": {
+   "md5": "b0558db71839047ce0c148f764e9dec1",
+   "size": 1142505519,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T08-30-06_629_attack_dtr-v11.1-defer1p0-nocache_sus_BA10-UNION_autosubmit.eval": {
+   "md5": "05f4ed39ffa95115316f9f8d8d8dde85",
+   "size": 1097349018,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig11",
+    "tab2",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T08-31-44_624_attack_dtr-v11.1-defer3p0-nocache_sus_BA10-UNION.eval": {
+   "md5": "baed5c44d3ea347bf200f6c45cfcc980",
+   "size": 919673535,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T08-31-44_624_attack_dtr-v11.1-defer3p0-nocache_sus_BA10-UNION_autosubmit.eval": {
+   "md5": "fb74c342ece73288c02f0d8204e799df",
+   "size": 856560926,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig11",
+    "tab2",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-07-55_629_dtrf-v11.1-defer0p5-nocache_sus_BA10-UNION.eval": {
+   "md5": "bd69ae09389dff68cdb75b3115dd94e8",
+   "size": 583987713,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig6",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig13",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-24-05_621_attack_dtr-v11.1-defer0p2-nocache_sus_BA10-UNION_autosubmit_rf3excl8.eval": {
+   "md5": "4b2a68eba8760ce2b5cc1c2b34c7ddc5",
+   "size": 1257943721,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig11",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-24-05_629_attack_dtr-v11.1-defer0p2-nocache_sus_BA10-UNION.eval": {
+   "md5": "c860a733d9a9f968c62052ae93366b7a",
+   "size": 1300900029,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-24-05_629_attack_dtr-v11.1-defer0p2-nocache_sus_BA10-UNION_autosubmit.eval": {
+   "md5": "7e48ed5da6e3d7b71b9288a65c30165c",
+   "size": 1280776994,
+   "used_by": [
+    "fig9",
+    "fig10",
+    "tab2",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION.eval": {
+   "md5": "5bc5e83fdd5a4a63bfa886b1430d6f0c",
+   "size": 1229134077,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit.eval": {
+   "md5": "6a901356fe35386bbc5c9b3c6246d741",
+   "size": 1191620121,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig6",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig11",
+    "fig13",
+    "tab2",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit_actions10.eval": {
+   "md5": "73a565bcb857aab53a1855f023c83801",
+   "size": 1147866751,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit_actions15.eval": {
+   "md5": "b8c7f0d6f35ebd3d3eec0c63dd22c7dc",
+   "size": 1167818066,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit_actions20.eval": {
+   "md5": "4e6228c845f9e592fb5f03611976aa80",
+   "size": 1180755349,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit_actions25.eval": {
+   "md5": "d5e07edb9edd4b8d0eae8d846f8321b7",
+   "size": 1186910957,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit_actions30.eval": {
+   "md5": "b2e2543b939f397b69b1cfa8e5cfeac3",
+   "size": 1189397247,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit_actions35.eval": {
+   "md5": "f79e6daa8ab1c9f6ca3a81a78e6eb00a",
+   "size": 1190621815,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit_actions40.eval": {
+   "md5": "6a35293bed870fcedfb02507ce291c59",
+   "size": 1191199338,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit_actions45.eval": {
+   "md5": "d2dd072b6fc8dcf289fcd5ed17d0e46c",
+   "size": 1191421172,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit_actions5.eval": {
+   "md5": "5bcdfc3e99690f58131e060aa8ca1263",
+   "size": 1126856687,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit_actions50.eval": {
+   "md5": "2130348c0d63ee4ddc1378ccfc3cbcd2",
+   "size": 1191535497,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-24T14-25-13_629_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION_autosubmit_actions55.eval": {
+   "md5": "58dfaf21275bb869da6d107ee4346d0a",
+   "size": 1191596326,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T00-45-23_566_attack_online-dtd-v11.1-thr3p0-rem_BA10-UNION566.eval": {
+   "md5": "ef69086cad761ca5b6c2e76843e88b61",
+   "size": 1224072077,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T00-45-23_566_attack_online-dtd-v11.1-thr3p0-rem_BA10-UNION566_autosubmit.eval": {
+   "md5": "59284aa847cd846d8b144826745a2308",
+   "size": 1187837653,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig11",
+    "fig15",
+    "tab1",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T00-45-41_566_online-dtd-v11.1-thr3p0-rem-honest_BA10-UNION566.eval": {
+   "md5": "b010d5a228fd89e15c272b259e7121de",
+   "size": 283487301,
+   "used_by": [
+    "fig2",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig15",
+    "tab1"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T03-00-47_566_online-dtd-v11.1-thr3p0-root-honest_BA10-UNION566.eval": {
+   "md5": "35b787504910f9e4733b537881b1fa53",
+   "size": 221447371,
+   "used_by": [
+    "fig2",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig15",
+    "tab1"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T03-58-10_566_attack_online-dtd-v11.1-thr3p0-root_BA10-UNION566.eval": {
+   "md5": "77c606253490e52dc8d41d64bf2d52e1",
+   "size": 1144498665,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T03-58-10_566_attack_online-dtd-v11.1-thr3p0-root_BA10-UNION566_autosubmit.eval": {
+   "md5": "9a3cc96ea2cac612e27b90a4a9b403ac",
+   "size": 1109317381,
+   "used_by": [
+    "fig2",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig15",
+    "tab1",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T06-26-28_566_online-dtd-v11.1-thr3p0-fhe-honest_BA10-UNION566.eval": {
+   "md5": "2163e5a69b28e9471f9c95fcb6f8f213",
+   "size": 261863769,
+   "used_by": [
+    "fig2",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig15",
+    "tab1"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T06-33-58_566_attack_online-dtd-v11.1-thr3p0-fhe_BA10-UNION566.eval": {
+   "md5": "e5bc868f18cbd0ea4d461e921c3f1c40",
+   "size": 1179127775,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T06-33-58_566_attack_online-dtd-v11.1-thr3p0-fhe_BA10-UNION566_autosubmit.eval": {
+   "md5": "9ab5cd6e1db8686ce45c629f5ec6277a",
+   "size": 1136203716,
+   "used_by": [
+    "fig2",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig15",
+    "tab1",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T08-17-38_159_uh-gapfill_sus_BA10-UNION566.eval": {
+   "md5": "d3e92488391161b2cb49eea4efabb547",
+   "size": 32023784,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig5",
+    "fig6",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig11",
+    "fig13",
+    "fig15",
+    "tab1",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T09-02-06_566_online-dtd-v11.1-thr3p0-nosum-honest_BA10-UNION566.eval": {
+   "md5": "8a5d1beffdd80ca8c4bc5faded09de98",
+   "size": 271205227,
+   "used_by": [
+    "fig2",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig15",
+    "tab1"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T12-24-53_566_online-dtd-v11.1-thr2p333-honest_BA10-UNION566.eval": {
+   "md5": "687f0b1b0a1fc5d10f844bdd86c0c93b",
+   "size": 276404942,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig4",
+    "fig5",
+    "fig6",
+    "fig7",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig11",
+    "fig12",
+    "fig13",
+    "fig14",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T13-18-21_566_online-dtd-v11.1-thr5p0-honest_BA10-UNION566.eval": {
+   "md5": "40d4b83024952521c5f28a2b4348fa53",
+   "size": 219476049,
+   "used_by": [
+    "fig8",
+    "fig9",
+    "fig10"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T15-13-44_561_attack_online-dtd-v11.1-thr5p0_BA10-UNION566.eval": {
+   "md5": "9f7b4ae75dc8a62a39a952c4169c4d2a",
+   "size": 1058637135,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T15-13-44_561_attack_online-dtd-v11.1-thr5p0_BA10-UNION566_autosubmit.eval": {
+   "md5": "41736743f694b596e909c44160d9c5a5",
+   "size": 985266802,
+   "used_by": [
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig11",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T17-14-25_566_attack_online-dtd-v11.1-thr2p333_BA10-UNION566.eval": {
+   "md5": "2b0c8d4e1eee5d9cc5b540962e26a316",
+   "size": 1253237940,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T17-14-25_566_attack_online-dtd-v11.1-thr2p333_BA10-UNION566_autosubmit.eval": {
+   "md5": "389872d6db6c31c59f46f312763efa0c",
+   "size": 1223544849,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig4",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig11",
+    "fig14",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T18-59-21_566_online-dtd-v11.1-thr1p333-honest_BA10-UNION566.eval": {
+   "md5": "144667c704a8401b892a47d50ed6141f",
+   "size": 338421639,
+   "used_by": [
+    "fig8",
+    "fig9",
+    "fig10"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T21-45-11_566_attack_online-dtd-v11.1-thr1p333_BA10-UNION566.eval": {
+   "md5": "b4b639b7d9d718e7b78b7a77747295b8",
+   "size": 1304417419,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-30T21-45-11_566_attack_online-dtd-v11.1-thr1p333_BA10-UNION566_autosubmit.eval": {
+   "md5": "d8ab509c7300a94262ddc78da2726817",
+   "size": 1293134407,
+   "used_by": [
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig10",
+    "fig11",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-31T00-56-41_566_attack_online-ces-v11.1-rem_BA10-UNION566.eval": {
+   "md5": "5f96fc7531d3ab9bb8ef50e815761914",
+   "size": 837999755,
+   "used_by": [
+    "fig9",
+    "fig11"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-31T00-56-41_566_attack_online-ces-v11.1-rem_BA10-UNION566_autosubmit.eval": {
+   "md5": "797e3dec395726b1145aa1fdeda0dff8",
+   "size": 678216675,
+   "used_by": [
+    "fig9",
+    "fig10",
+    "fig11",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-31T00-56-47_566_online-ces-v11.1-rem-honest_BA10-UNION566.eval": {
+   "md5": "e9a3ee786e9c82e91e1e6dfb0b3b151b",
+   "size": 504716746,
+   "used_by": [
+    "fig9",
+    "fig10",
+    "fig11"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-31T06-22-30_566_attack_online-dtd-v11.1-thr2p333-planshare_BA10-UNION566.eval": {
+   "md5": "da8b5f96d03f63965a5f9d9ca68cfcc5",
+   "size": 1189088869,
+   "used_by": [
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-07-31T06-22-30_566_attack_online-dtd-v11.1-thr2p333-planshare_BA10-UNION566_autosubmit.eval": {
+   "md5": "a79ed6c1485d879d55c249103d2528bf",
+   "size": 1181543388,
+   "used_by": [
+    "fig8",
+    "fig9",
+    "fig10",
+    "tab3"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-07T02-46-39_566_online-dtd-v11.1-thr2p333-random-honest_BA10-UNION566.eval": {
+   "md5": "34bc7c8e4c532996c0a5317b628eaf44",
+   "size": 296269561,
+   "used_by": [
+    "fig5"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T17-05-58_566_attack_online-dtd-v11.1-thr3p0-nosum-promptfix_BA10-UNION566.eval": {
+   "md5": "2fb21e454b00b6bf36a216dfe76e4c65",
+   "size": 1139361576,
+   "used_by": [
+    "fig2",
+    "fig8",
+    "fig9",
+    "fig15",
+    "tab1"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T20-52-47_566_attack_sus_BA10-UNION-planinj.eval": {
+   "md5": "e463f51d2e1befdc45f812203d2c1e11",
+   "size": 153924875,
+   "used_by": [
+    "fig15"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566.eval": {
+   "md5": "22ea8fc6bb91f32e35f42950fc1501c9",
+   "size": 1218633826,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig4",
+    "fig6",
+    "fig7",
+    "fig8",
+    "fig9",
+    "fig11",
+    "fig12",
+    "fig13",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_actionsTotal10.eval": {
+   "md5": "8418d86f3a95f18697ab11ef3d072370",
+   "size": 1161558251,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_actionsTotal15.eval": {
+   "md5": "1c2749b7696257725600148a69e4f36c",
+   "size": 1171445286,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_actionsTotal20.eval": {
+   "md5": "f01c115bcbafee35afc948eb92d97128",
+   "size": 1181705568,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_actionsTotal25.eval": {
+   "md5": "833642d5ffb1b27484ee757004df8170",
+   "size": 1190914216,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_actionsTotal30.eval": {
+   "md5": "d9686ba2223100525e89342bfdb3e0da",
+   "size": 1198237946,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_actionsTotal35.eval": {
+   "md5": "d9794ba082be7254a1660b38fefa17c7",
+   "size": 1203583359,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_actionsTotal40.eval": {
+   "md5": "8fad3ec47d250e001b561bac69b81099",
+   "size": 1207757051,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_actionsTotal45.eval": {
+   "md5": "dec11ddcf0735063cbf1206af1d80b14",
+   "size": 1210826731,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_actionsTotal5.eval": {
+   "md5": "d84259907f597affb64fa35589c443e2",
+   "size": 1155201165,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_actionsTotal50.eval": {
+   "md5": "7ebb10646f959525b43c709710bc8087",
+   "size": 1213535896,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_actionsTotal55.eval": {
+   "md5": "47d759410f537b28cf150c88c904acd3",
+   "size": 1216054423,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_child0only.eval": {
+   "md5": "6fcc604c94eb5ae7772a1dccce630d4f",
+   "size": 1155640572,
+   "used_by": [
+    "fig12"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-21T01-43-57_566_attack_online-dtd-v11.1-thr2p333-withtips-planshare_BA10-UNION566.eval": {
+   "md5": "af1cb7aae12beb9d51d112347fe15d0b",
+   "size": 1001622591,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig4",
+    "fig8",
+    "fig9",
+    "fig11"
+   ]
+  },
+  "experiments/_logs/tower/2026-08-21T19-03-12_566_attack_sus_BA10-UNION-stdplan.eval": {
+   "md5": "0592d846fc9c69954c4c5c234c6b89ed",
+   "size": 177238782,
+   "used_by": [
+    "fig15"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3.eval": {
+   "md5": "bff103c72158ac9dd20074facb8484f1",
+   "size": 25337356,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig6",
+    "fig8",
+    "fig9",
+    "fig11",
+    "fig13",
+    "fig15",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3_actions10.eval": {
+   "md5": "5529fd56a65fc7efa1263e8fde4ba0ee",
+   "size": 24436579,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3_actions15.eval": {
+   "md5": "4a958e1f8d30ed54e891d6ad18b168c8",
+   "size": 24714726,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3_actions20.eval": {
+   "md5": "0f6b04970bf872e45ed415e6111a6231",
+   "size": 24929291,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3_actions25.eval": {
+   "md5": "d7bd87f951212f1014225a166c4d6f34",
+   "size": 24976602,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3_actions30.eval": {
+   "md5": "b63d169e58cf62d4164a4b0b89407bfe",
+   "size": 25018101,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3_actions35.eval": {
+   "md5": "42076be75d8bbfea67f97b368a2ca991",
+   "size": 25118978,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3_actions40.eval": {
+   "md5": "b1eb83bffa0da8aadc1d7e19f2d03380",
+   "size": 25233835,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3_actions45.eval": {
+   "md5": "8e7554ba90d1cadcdd370320fefa3b8c",
+   "size": 25279437,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3_actions5.eval": {
+   "md5": "7c99f2a50bfb82838882828c191c54ed",
+   "size": 24231266,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3_actions50.eval": {
+   "md5": "5d48d8e1700103c9e2734b3567e516fb",
+   "size": 25302358,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3_actions55.eval": {
+   "md5": "8b792915d54ab56603041d9c4d5d9396",
+   "size": 25326064,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T00-45-13_121_attack_online-dtd-v11.1-thr3p0-rem_BA10-UNION566-RF3.eval": {
+   "md5": "a2885e412ff099e91c3723372213cd6f",
+   "size": 255370755,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig11",
+    "fig15",
+    "tab1"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T00-46-57_136_attack_online-dtd-v11.1-thr3p0-fhe_BA10-UNION566-RF3.eval": {
+   "md5": "733d7a3f52e87cb71611053d90442aa4",
+   "size": 261197383,
+   "used_by": [
+    "fig2",
+    "fig8",
+    "fig9",
+    "fig15",
+    "tab1"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-02-41_120_attack_online-dtd-v11.1-thr2p333_BA10-UNION566-RF3.eval": {
+   "md5": "6c7609fcb3f9ad4bd896935ae96af6e9",
+   "size": 259927964,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig4",
+    "fig8",
+    "fig9",
+    "fig11"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-07-17_99_attack_online-dtd-v11.1-thr1p333_BA10-UNION566-RF3.eval": {
+   "md5": "a317f0d80cef23ba7dd08afad258a2b1",
+   "size": 236492446,
+   "used_by": [
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig11"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-14-21_114_attack_online-dtd-v11.1-thr5p0_BA10-UNION566-RF3.eval": {
+   "md5": "5c5008b1ec3e9921daad92628168e6a2",
+   "size": 195108337,
+   "used_by": [
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig11"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-20-55_117_attack_dtr-v11.1-defer1p0-nocache_sus_BA10-UNION566-RF3.eval": {
+   "md5": "80ed8d3791d32cc0b50adcef8bc72078",
+   "size": 199238408,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig11",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-26-33_138_attack_dtr-v11.1-defer0p2-nocache_sus_BA10-UNION566-RF3.eval": {
+   "md5": "42ade482ec4df7d807a313bcb992b761",
+   "size": 263350772,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig11",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3.eval": {
+   "md5": "4039868d3be94e0f41a460fac5b3f09f",
+   "size": 259869013,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig6",
+    "fig8",
+    "fig9",
+    "fig11",
+    "fig13",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3_actions10.eval": {
+   "md5": "32af73926ace8581a93e7f17bb96c67c",
+   "size": 251118737,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3_actions15.eval": {
+   "md5": "06f1879d9c9840d9780f28aa7d1206d6",
+   "size": 255815862,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3_actions20.eval": {
+   "md5": "6758a7571946fa256a84403fec0f0d55",
+   "size": 258001868,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3_actions25.eval": {
+   "md5": "dd075131f6d0cf8024e8b3891202b4f7",
+   "size": 258982439,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3_actions30.eval": {
+   "md5": "94aa88616aa1e02c62daf93338e693e7",
+   "size": 259427581,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3_actions35.eval": {
+   "md5": "fa12956e6bd074c3eec70a1a0ae4851e",
+   "size": 259672640,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3_actions40.eval": {
+   "md5": "8e4ff286763a2d826f6cda3146ab9173",
+   "size": 259805259,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3_actions45.eval": {
+   "md5": "a761ade4fdd344fa558a6978d13c019d",
+   "size": 259857404,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3_actions5.eval": {
+   "md5": "bdc6ce26c00fa7cbc5c31c1511e0065d",
+   "size": 245971049,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3_actions50.eval": {
+   "md5": "0791aea57931dac5d1a165c9b7e254c2",
+   "size": 259869013,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T01-32-21_139_attack_dtr-v11.1-defer0p5-nocache_sus_BA10-UNION566-RF3_actions55.eval": {
+   "md5": "50d2a7c97f0b61f132ee0b338824320a",
+   "size": 259869013,
+   "used_by": [
+    "fig6"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T03-32-56_127_attack_dtr-v11.1-defer3p0-nocache_sus_BA10-UNION566-RF3.eval": {
+   "md5": "49bf32c9205580ee14b8b61a4131d9ff",
+   "size": 177614562,
+   "used_by": [
+    "fig2",
+    "fig3",
+    "fig8",
+    "fig9",
+    "fig11",
+    "tab2"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T04-03-11_97_attack_online-dtd-v11.1-thr3p0-root_BA10-UNION566-RF3.eval": {
+   "md5": "2edf1d4e27f726f57c92ef7e1e05468a",
+   "size": 203567969,
+   "used_by": [
+    "fig2",
+    "fig8",
+    "fig9",
+    "fig15",
+    "tab1"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T04-17-19_89_attack_online-ces-v11.1-rem_BA10-UNION566-RF3.eval": {
+   "md5": "7bccfc329e2a722f537cf19e180465d3",
+   "size": 59696495,
+   "used_by": [
+    "fig9",
+    "fig11"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-02T04-38-14_169_attack_online-dtd-v11.1-thr2p333-planshare_BA10-UNION566-RF3.eval": {
+   "md5": "d899173979595aaf3807b012f8117ba0",
+   "size": 383141952,
+   "used_by": [
+    "fig8",
+    "fig9"
+   ]
+  },
+  "experiments/_logs/tower/2026-09-03T20-11-14_566_attack_online-dtd-v11.1-thr2p333-withtips-planchild0_BA10-UNION566.eval": {
+   "md5": "7d0a4e71ad941bb4b6c76ef1f4927945",
+   "size": 1224341989,
+   "used_by": [
+    "fig2",
+    "fig4",
+    "fig8",
+    "fig9"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit/scan_id=Mt5Xsc7NtwGh6Evn8e7Ruj/_errors.jsonl": {
+   "md5": "d41d8cd98f00b204e9800998ecf8427e",
+   "size": 0,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit/scan_id=Mt5Xsc7NtwGh6Evn8e7Ruj/_scan.json": {
+   "md5": "d5ba6644a0735ec9dcf143cb111e4ebc",
+   "size": 110227,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit/scan_id=Mt5Xsc7NtwGh6Evn8e7Ruj/_summary.json": {
+   "md5": "48c4adc1d89ca00a70a8918cd9ad53a2",
+   "size": 923,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit/scan_id=Mt5Xsc7NtwGh6Evn8e7Ruj/attack_score.parquet": {
+   "md5": "a42e3d25d52f3ed3d5319596954b1717",
+   "size": 117981973,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit/scan_id=Mt5Xsc7NtwGh6Evn8e7Ruj/overall_max_suspicion.parquet": {
+   "md5": "fe7422a227f07a089596f911041800bf",
+   "size": 117984214,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit/scan_id=Mt5Xsc7NtwGh6Evn8e7Ruj/side_task_attribution.parquet": {
+   "md5": "cccf8ee4108a7fd764ad2e03a4272d39",
+   "size": 138225098,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit/scan_id=Mt5Xsc7NtwGh6Evn8e7Ruj/side_task_success.parquet": {
+   "md5": "9f5f24ff9d465a0db33d7e701d11d1ab",
+   "size": 117983300,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-15T03-59-44_629_attack_tm-v11.1_sus_BA10-UNION_autosubmit/summary.csv": {
+   "md5": "5fb7dc7201ebf2a1b8b309582f90fc5e",
+   "size": 293516,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-30T17-14-25_566_attack_online-dtd-v11.1-thr2p333_BA10-UNION566_autosubmit/scan_id=6CGgc2iQ73dWEWMijXRb7A/_errors.jsonl": {
+   "md5": "d41d8cd98f00b204e9800998ecf8427e",
+   "size": 0,
+   "used_by": [
+    "fig14"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-30T17-14-25_566_attack_online-dtd-v11.1-thr2p333_BA10-UNION566_autosubmit/scan_id=6CGgc2iQ73dWEWMijXRb7A/_scan.json": {
+   "md5": "49c8f3883851e5cc0da9d65bb6c2669f",
+   "size": 131401165,
+   "used_by": [
+    "fig14"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-30T17-14-25_566_attack_online-dtd-v11.1-thr2p333_BA10-UNION566_autosubmit/scan_id=6CGgc2iQ73dWEWMijXRb7A/_summary.json": {
+   "md5": "9702d43b1c492ffa9acff4ea543d5c13",
+   "size": 1209,
+   "used_by": [
+    "fig14"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-30T17-14-25_566_attack_online-dtd-v11.1-thr2p333_BA10-UNION566_autosubmit/scan_id=6CGgc2iQ73dWEWMijXRb7A/attack_score.parquet": {
+   "md5": "95270a1a2051f45a88909263fc1d859a",
+   "size": 494127080,
+   "used_by": [
+    "fig14"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-30T17-14-25_566_attack_online-dtd-v11.1-thr2p333_BA10-UNION566_autosubmit/scan_id=6CGgc2iQ73dWEWMijXRb7A/child_task_resumption.parquet": {
+   "md5": "df3d649606b04c6f61fee955fbd0cc75",
+   "size": 7847377158,
+   "used_by": [
+    "fig14"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-30T17-14-25_566_attack_online-dtd-v11.1-thr2p333_BA10-UNION566_autosubmit/scan_id=6CGgc2iQ73dWEWMijXRb7A/initial_plan_side_task.parquet": {
+   "md5": "a2b4355b31ba60be79b1ba69210262f9",
+   "size": 494168714,
+   "used_by": [
+    "fig14"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-30T17-14-25_566_attack_online-dtd-v11.1-thr2p333_BA10-UNION566_autosubmit/scan_id=6CGgc2iQ73dWEWMijXRb7A/inloop_max_profile.parquet": {
+   "md5": "0ecc4545affbb94991c51bafcc282ac5",
+   "size": 494149474,
+   "used_by": [
+    "fig14"
+   ]
+  },
+  "experiments/data/scout_scans/2026-07-30T17-14-25_566_attack_online-dtd-v11.1-thr2p333_BA10-UNION566_autosubmit/scan_id=6CGgc2iQ73dWEWMijXRb7A/side_task_success.parquet": {
+   "md5": "f28aa9063aa8a61fcaf838e0c624d33e",
+   "size": 494127979,
+   "used_by": [
+    "fig14"
+   ]
+  },
+  "experiments/data/scout_scans/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_side_task_per_child_half279/scan_id=VfPkYrRDiLeZSSJaxcsmvz/_errors.jsonl": {
+   "md5": "d41d8cd98f00b204e9800998ecf8427e",
+   "size": 0,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_side_task_per_child_half279/scan_id=VfPkYrRDiLeZSSJaxcsmvz/_scan.json": {
+   "md5": "903abd62ec648100f0d6dfc69cc3ead1",
+   "size": 135006170,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_side_task_per_child_half279/scan_id=VfPkYrRDiLeZSSJaxcsmvz/_summary.json": {
+   "md5": "2d4caa2a249771dee18bf139a9fc564f",
+   "size": 762,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_side_task_per_child_half279/scan_id=VfPkYrRDiLeZSSJaxcsmvz/attack_score.parquet": {
+   "md5": "1069a87327e0414f4428fbc402e6b78b",
+   "size": 240341418,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_side_task_per_child_half279/scan_id=VfPkYrRDiLeZSSJaxcsmvz/per_child_attempts.txt": {
+   "md5": "2f9302ef93eee50247dcc706a0ea519c",
+   "size": 3144,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_side_task_per_child_half279/scan_id=VfPkYrRDiLeZSSJaxcsmvz/side_task_attribution_per_child.parquet": {
+   "md5": "874e544a7a70f5ba2a93fff572b6df1e",
+   "size": 3921544689,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-08-20T22-18-47_566_attack_online-dtd-v11.1-thr2p333-withtips-noplan_BA10-UNION566_side_task_per_child_half279/scan_id=VfPkYrRDiLeZSSJaxcsmvz/side_task_success.parquet": {
+   "md5": "d5fe773115f6a625340091cca4c0f36a",
+   "size": 240342673,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3/scan_id=ENpLiSceC9fqDmmF5QLHtf/_errors.jsonl": {
+   "md5": "d41d8cd98f00b204e9800998ecf8427e",
+   "size": 0,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3/scan_id=ENpLiSceC9fqDmmF5QLHtf/_scan.json": {
+   "md5": "d145af45bf7aa10d97001c2494f2b839",
+   "size": 15858,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3/scan_id=ENpLiSceC9fqDmmF5QLHtf/_summary.json": {
+   "md5": "84fc148f7edb929b63943b8e2ff156aa",
+   "size": 908,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3/scan_id=ENpLiSceC9fqDmmF5QLHtf/attack_score.parquet": {
+   "md5": "16f5c0d27bfc0b4fc4762bbde3d31117",
+   "size": 15963081,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3/scan_id=ENpLiSceC9fqDmmF5QLHtf/overall_max_suspicion.parquet": {
+   "md5": "15c7c80856ea4212430120d218a4c8d9",
+   "size": 15963449,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3/scan_id=ENpLiSceC9fqDmmF5QLHtf/side_task_attribution.parquet": {
+   "md5": "2f27aaf39164fcb46dc3aff102c0c692",
+   "size": 18983312,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3/scan_id=ENpLiSceC9fqDmmF5QLHtf/side_task_success.parquet": {
+   "md5": "3b0b1a881e76ac28881a22268feba897",
+   "size": 15963265,
+   "used_by": [
+    "appendix-malware"
+   ]
+  },
+  "experiments/data/scout_scans/2026-09-01T23-56-42_86_attack_tm-v11.1_sus_BA10-UNION566-RF3/summary.csv": {
+   "md5": "e4822015005354c73b8c8ed308c71abc",
+   "size": 40822,
+   "used_by": [
+    "appendix-malware"
+   ]
+  }
+ }
+}

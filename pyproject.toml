@@ -1,0 +1,62 @@
+[project]
+name = "tu-bb2"
+version = "0.1.0"
+description = "Defer to decompose (DTD) AI control protocols in BashArena"
+readme = "README.md"
+requires-python = ">=3.13.9, <3.14"
+dependencies = [
+    "inspect-ai>=0.3.229",
+    "openai>=2.48.0,<3",
+    "anthropic>=0.105.0",
+    "ipykernel>=7.1.0",
+    "control-tower",
+    "docent-python>=0.1.45a0",
+    "inspect-scout>=0.4.39",
+    "scikit-learn>=1.7.0",
+    # Used by named_tasks_and_logs to load the BashArena task dataset
+    # (load_dataset("Eccentricity/bashbench2")). Previously satisfied outside uv;
+    # made an explicit dep after control-arena (which provided it transitively) was removed.
+    "datasets>=2.14.0",
+    # experiments/scripts/release_data.py downloads the paper's data from Hugging Face.
+    "huggingface_hub>=0.36",
+]
+
+[tool.uv.sources]
+# FORK of control-tower v2.2.0 (aaron-sandoval/control-tower @ main). Carries EC2-fleet
+# fixes that were previously out-of-tree .venv patches, plus the native all_side_tasks
+# combined side task that replaced the tu_bb2.ct_ext.side_tasks monkeypatch:
+#   - eval: thread max_sandboxes through EvalCliInputs into the local inspect eval()
+#   - ec2/bootstrap: build BashArena private benchmark-base on the worker (ghcr login,
+#     local base build, SKIP_DOCKER_BUILD=0)
+#   - ec2/fleet: default worker idle timeout to 120s
+#   - task: native all_side_tasks combined ("achieve any one") side task
+#   - task: resolve synthetic all_side_tasks in get_full_side_task (runtime path) so attack
+#     (combined-side-task) runs work at RUNTIME, not just config validation — before this the
+#     combined task was only wired into the validation resolvers, so every EC2 attack sample
+#     errored "Side task all_side_tasks not found in environment basharena" (fork main now
+#     1f011d04: prior pin 5a4e47e5 fast-forwarded with the runtime-resolution fix).
+# Tracks the aaron-sandoval FORK's main, NOT upstream (linuxarena) main: upstream v2.2.2 is a
+# 364-file refactor that breaks tu_bb2 imports (sample_metadata moved, TrackedModel removed)
+# and changes monitor/model semantics — see analysis before upgrading.
+# The per-action research metadata that the online-decomposer / selective-attack analyses
+# need (child_task_index, attack decision/score) is still re-attached onto Action.metadata
+# post-conversion by tu_bb2._trajectory_convert.convert_eval_logs_to_trajs_with_metadata.
+#   - env(settings): the additive "basharena2" setting (BashArena 1.2) resolvable by
+#     `ct settings pull basharena2` (points at aaron-sandoval/basharena_public@ffc28252).
+control-tower = { git = "https://github.com/aaron-sandoval/control-tower", branch = "main" }
+
+[tool.uv]
+# control-tower pins docent-python==0.1.3a0 for its own (unused) Docent integration,
+# but tu-bb2's experiments/analysis docent tooling needs the newer SDK. Override to a
+# single version; control-tower imports docent lazily only in modules we don't call.
+override-dependencies = ["docent-python>=0.1.45a0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["tu_bb2"]
